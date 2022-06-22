@@ -11,6 +11,6 @@ Console.Write("Enter the number: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
 if ((num % 2) == 0) {
-    Console.WriteLine("Число четное");
+    Console.WriteLine("Yes");
 } 
-else Console.WriteLine("Число нечетное");
+else Console.WriteLine("No");
