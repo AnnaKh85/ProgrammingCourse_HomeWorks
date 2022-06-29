@@ -46,7 +46,11 @@ void PrintArray(double[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            Write($"{Math.Round(array[i, j], 2)}");
+            if (j > 0)
+            {
+                Write(", ");
+            }
+            Write($"{Math.Round(array[i, j], 1)}");
         }
         WriteLine();
     }
