@@ -31,7 +31,7 @@ for (int i = 0; i < cols; i++)
     arithmetic += array[i, j];
   }
   arithmetic = Math.Round(arithmetic / cols, 1);
-  WriteLine($"the column № {i+1} {arithmetic}");
+  WriteLine($"the column № : {i+1}  {arithmetic}");
 }
 
 
@@ -56,7 +56,11 @@ for (int i = 0; i < array.GetLength(0); i++)
   {
       for (int j = 0; j < array.GetLength(0); j++)
       {
-        Write(array[i, j] + " ");
+            if (j > 0)
+                {
+                    Write(", ");
+                }
+            Write(array[i, j]);
       }
       WriteLine();
   }
