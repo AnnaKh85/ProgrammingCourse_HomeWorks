@@ -24,8 +24,6 @@ int cols = int.Parse(ReadLine());
 
 int[,] array = GetArray(cols, rows);
 
-//WriteArrayInt(array);
-
 WriteLine("");
 
 printArray(array);
